@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Recommendation from "./components/11Component/Recommendation";
+import Card2 from "./components/Card/Card";
+import pillowImg from "./components/Card/Image1.png";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Recommendation />
+
+      <div style={{ display: 'flex', gap: '20px', padding: '20px', flexWrap: 'wrap' }}>
+        <Card2 
+          title="ПОДУШКА POP 1" 
+          category="Интерьерная подушка" 
+          price="12" 
+          imageUrl={pillowImg} 
+        />
+        <Card2 
+          title="ПОДУШКА POP 2" 
+          category="Интерьерная подушка" 
+          price="15" 
+          imageUrl={pillowImg} 
+        />
+        <Card2 
+          title="ПОДУШКА POP 3" 
+          category="Интерьерная подушка" 
+          price="20" 
+          imageUrl={pillowImg} 
+        />
+
+         <Footer />
+      </div>
     </div>
   );
 }

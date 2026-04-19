@@ -1,0 +1,50 @@
+.card2-container {
+  width: 200px;
+  border-radius: 15px;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.card2-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.recommendation {
+  background: #f3f3f3;
+  padding: 20px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; 
+}
+
+.chip {
+  background: #e5e5e5;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.chip:hover {
+  background: #d4d4d4;
+}
+
+.card2-price {
+  font-weight: 850; 
+  font-size: 18px;  
+  color: #000;   
+  align-items: center;
+}
