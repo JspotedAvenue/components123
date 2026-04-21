@@ -1,5 +1,14 @@
 import React from "react";
 import "./Footer.css";
+import { 
+  FaInstagram, 
+  FaTwitter, 
+  FaTelegramPlane,
+  FaCcVisa, 
+  FaCcMastercard, 
+  FaPaypal, 
+  FaApplePay 
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -43,21 +52,18 @@ const Footer = () => {
         <p>Зміст підтеми</p>
       </div>
 
-      {/* соцсети */}
-      <div className="socials">
-        <span>📷</span>
-        <span>✖</span>
-        <span>🐦</span>
-        <span>✈</span>
-      </div>
+<div className="socials">
+  <FaInstagram />
+  <FaTwitter />
+  <FaTelegramPlane />
+</div>
 
-      {/* платежи */}
-      <div className="payments">
-        <span>VISA</span>
-        <span>MC</span>
-        <span>PayPal</span>
-        <span>МИР</span>
-      </div>
+<div className="payments">
+  <FaCcVisa />
+  <FaCcMastercard />
+  <FaPaypal />
+  <FaApplePay />
+</div>
 
       {/* кнопка */}
       <button className="scroll-top">↑</button>

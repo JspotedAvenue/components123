@@ -1,5 +1,5 @@
 .footer {
-  width: 1920px;
+  /* width: 1920px; */
   height: 680px;
   position: relative;
   background: #F2F2F2;
@@ -73,4 +73,21 @@
   right: 220px;
   display: flex;
   justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.socials svg {
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  transition: 0.3s;
+}
+
+.socials svg:hover {
+  color: #666;
 }
