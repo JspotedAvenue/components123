@@ -1,50 +1,74 @@
-.card2-container {
-  width: 200px;
-  border-radius: 15px;
-  background: #fff;
-  padding: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+@media (max-width: 600px) {
+  .recommendation {
+    padding: 15px;
+  }
+
+  .chips {
+    gap: 8px;
+  }
+
+  .chip {
+    padding: 7px 14px;
+    font-size: 12px;
+  }
+
+  .card2-container {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+    padding: 10px;
+  }
+
+  .card2-img {
+    border-radius: 8px;
+  }
+
+  .card2-price {
+    font-size: 17px;
+  }
+
+  .title {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
 }
 
+/* =========================
+   SMALL MOBILE
+========================= */
 
-.card2-img {
-  width: 100%;
-  border-radius: 10px;
+@media (max-width: 400px) {
+  .recommendation {
+    padding: 10px;
+  }
+
+  .card2-container {
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .chip {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  .card2-price {
+    font-size: 15px;
+  }
+
+  .title {
+    font-size: 13px;
+  }
 }
 
-.recommendation {
-  background: #f3f3f3;
-  padding: 20px;
-}
-
-.title {
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.chips {
+.cards-wrapper {
   display: flex;
-  gap: 10px;
-  flex-wrap: wrap; 
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-.chip {
-  background: #e5e5e5;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.chip:hover {
-  background: #d4d4d4;
-}
-
-.card2-price {
-  font-weight: 850; 
-  font-size: 18px;  
-  color: #000;   
-  align-items: center;
+@media (max-width: 600px) {
+  .cards-wrapper {
+    flex-direction: column;
+  }
 }
